@@ -57,10 +57,6 @@ func (t *KVStore) write(stub shim.ChaincodeStubInterface, args []string) ([]byte
 	if err != nil {
 		return nil, err
 	}
-  err = stub.GetState(key)
-  if err != nil {
-    return nil, err
-  }
 	return nil, nil
 }
 
